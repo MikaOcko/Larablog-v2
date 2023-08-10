@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Model;
 
-
-
 class Article extends Model
 {
     use HasFactory;
@@ -17,7 +15,6 @@ class Article extends Model
         "picture",
         'content'
     ];
-
 
     public function posts(): HasMany
     {
